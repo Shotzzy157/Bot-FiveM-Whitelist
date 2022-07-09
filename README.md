@@ -4,11 +4,14 @@ Library: discord.js
 
 Library Version: 12
 
+
+Bot only has the simple wl function, if you want more commands or a more complete wl, call me on discord!
+
 <h3 align="left">REQUIREMENTS</h3>
 
 node version 14: <a href="https://nodejs.org/download/release/v14.18.3/">download</a>
 
-Database
+Database: Mysql or MariaDB
 
 <h3 align="left">HOW TO USE</h3>
 
