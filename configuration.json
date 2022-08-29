@@ -1,17 +1,3 @@
 {
-    "prefix": ";",
-    "hotel": {
-        "hotelName": "",
-        "hotelUrl": "https://discord.gg/YDmbap49bJ",
-        "fpath": "https://habbo.city/habbo-imaging/avatarimage?&action=std,crr=6&direction=3&head_direction=3&img_format=png&gesture=sml&frame=1&headonly=0&size=l",
-        "profilehome": "/profile/",
-        "usershall": 5,
-        "cms": "brain",
-        "newscmslink": "/article/"
-    },
-    "config": {
-        "language": "PT",
-        "avatarurlgesture": "&action=std,crr=6&direction=3&head_direction=3&img_format=png&gesture=sml&frame=1&headonly=0&size=l",
-        "colorembeds": "BLUE"
-    }
+    "prefix": ";"
 }
