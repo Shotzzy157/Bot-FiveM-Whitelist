@@ -2,10 +2,6 @@ const { readFileSync } = require('fs')
 const Discord = require("discord.js");
 const configuration = require('./configuration.json');
 require('dotenv').config()
-let languages = [
-  "PT",
-  "EN"
-]
 const fs = require("fs");
 const color = require("colors");
 const client = new Discord.Client({partials: ["MESSAGE, USER, REACTION"]});
@@ -35,20 +31,15 @@ fs.readdir("./commands/", (err, files) => {
   files.forEach(file => {
     if (!file.endsWith(".js")) return;
     let props = require(`./commands/${file}`);
-    let commandName = file.split(".")[0];
-    if(configuration.config.language == 'PT'){
+    let commandName = file.split(".")[0]
       console.log(color.green('[COMANDO] -'+` ${commandName} carregado`))
-    }
-    if(configuration.config.language == 'EN'){
-      console.log(color.green('[COMMAND] -')+` ${commandName} started!`);
-    }
     client.commands.set(commandName, props);
   });
 });
 
 client.on("ready", () => {
   let status = [
-      `${configuration.hotel.hotelName}`,
+      `seu status`,
     ],
     teste = 0;
   setInterval( () => client.user.setActivity(`${status[teste++ % status.length]}`, {
